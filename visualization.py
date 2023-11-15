@@ -8,8 +8,8 @@ fig = go.Figure(data=go.Choropleth(
     locations=df['code'], # Spatial coordinates
     z = df['number students'].astype(float), # Data to be color-coded
     locationmode = 'USA-states', # set of locations match entries in `locations`
-    colorscale = 'Purples',
-    colorbar_title = "color scale title",
+    colorscale = 'plasma',
+    colorbar_title = "color scale",
 ))
 
 fig.update_layout(
